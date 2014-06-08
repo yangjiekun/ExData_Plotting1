@@ -10,6 +10,6 @@ powerData$Time <- strptime(powerData$Time, format = "%Y-%m-%d, %H:%M:%S")
 
 power2Day <- powerData[powerData$Date == as.Date(c("2007-02-01")) | powerData$Date == as.Date(c("2007-02-02")),]
 
-png("plot1.png")
+png("plot2.png")
 plot(power2Day$Time, power2Day$Global_active_power, ylab = "Global Active Power (kilowatts)", xlab = "", type = "l")
 dev.off()
